@@ -85,10 +85,7 @@ def show_data():
     if prediction == 0:
         outcome = 'Non-Churner'
 
-    return render_template('results.html', tables = [df.to_html(classes='data', header=True)],
-                           result = outcome)
-
-
+    return render_template('results.html', tables = [df.to_html(classes='data', header=True)], result = outcome)
 
 if __name__=="__main__":
     app.run(debug=True)
